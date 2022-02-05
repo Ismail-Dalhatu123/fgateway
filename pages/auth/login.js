@@ -3,9 +3,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Button from "../../components/button";
 import Input from "../../components/input";
-import AppContext from "../../contexts/AppContext";
+// import AppContext from "../../contexts/AppContext";
 export default () => {
-  const { setUser } = useContext(AppContext);
+  //   const { setUser } = useContext(AppContext);
   return (
     <div className="lg:flex">
       <div className="lg:w-1/2 xl:max-w-screen-sm">
@@ -47,11 +47,11 @@ export default () => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                setUser({
-                  user_name: "User01",
-                  _id: "1897391313",
-                  email: "hello@gmail.com",
-                });
+                // setUser({
+                //   user_name: "User01",
+                //   _id: "1897391313",
+                //   email: "hello@gmail.com",
+                // });
                 // alert();
               }}
             >

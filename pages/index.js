@@ -25,12 +25,6 @@ export default function Home() {
     );
   return (
     <AppContext.Provider value={{ user, setUser }}>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-        />
-      </Head>
       {user ? <Account /> : <Login />}
     </AppContext.Provider>
   );

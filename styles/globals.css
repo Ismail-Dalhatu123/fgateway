@@ -21,3 +21,7 @@ a {
   stroke-linecap: round;
   stroke-miterlimit: 3;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
