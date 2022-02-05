@@ -11,8 +11,12 @@ export default function Button({
   return (
     <button
       {...props}
+      style={{
+        padding: padding * 3,
+        borderRadius: border === "-full" ? 30 : 3,
+      }}
       disabled={disabled || loading}
-      className={`bg-indigo-500 text-gray-100 p-${padding} w-${width} rounded${border} tracking-wide
+      className={`bg-indigo-500 text-gray-100 pj-${padding} w-${width} roundedf${border} tracking-wide
         font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-indigo-600
         shadow-lg ${className}`}
     >
